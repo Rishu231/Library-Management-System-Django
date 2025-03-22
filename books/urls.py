@@ -10,7 +10,7 @@ urlpatterns = [
     # ✅ Add JWT Token Endpoints
     path('token/', CustomTokenObtainPairView.as_view(), name='token_obtain_pair'),  # Login & get tokens
     path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),  # Refresh access token
-    path("get_csrf_token/", get_csrf_token, name="csrf_token"),
+    path("csrf/", get_csrf_token, name="csrf_token"),
 
     # Book Endpoints
     path('books/', BookListView.as_view(), name='book-list'),
