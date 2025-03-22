@@ -57,18 +57,11 @@ WSGI_APPLICATION = 'library_management.wsgi.application'
 
 # ✅ CORS & CSRF Settings
 CORS_ALLOW_ALL_ORIGINS = False
-CORS_ALLOWED_ORIGINS = [
-    "http://library-management-system-django.vercel.app",
-    "http://localhost:3000",
-    "http://127.0.0.1:3000",
-]
+CORS_ALLOWED_ORIGINS = ["http://library-management-system-django.vercel.app"]
 CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOW_METHODS = ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"]
 CSRF_TRUSTED_ORIGINS = [
-    "http://library-management-system-django.vercel.app",
-    "http://localhost:3000",
-    "http://127.0.0.1:3000",
-]
+    "http://library-management-system-django.vercel.app"]
 
 # ✅ Database Configuration
 DATABASES = {
